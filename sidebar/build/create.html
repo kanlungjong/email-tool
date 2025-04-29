@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Template Builder</title>
+  <link rel="stylesheet" href="/sidebar/build/create.css">
+</head>
+<body>
+  <header>
+    <div>
+        <input id="template-name" value="Create..." />
+        <div class="view-toggle">
+          <button id="editorBtn" class="active">Editor</button>
+          <button id="previewBtn">Preview</button>
+        </div>
+    </div>
+    <div>
+        <div class="profile">
+            <span id="user-email"></span>
+            <img id="profile-picture" class="circle" src="" alt="Profile" />
+        </div>
+        <div class="right-controls">
+          <button class="back-button" onclick="goBack()">&lt; Back</button>
+          <!-- <button class="back-button"><a style="text-decoration: none; color: black;" href="/login/index.html">&lt; Back</a></button> -->
+          <button class="send-button"><a href="http://127.0.0.1:5000" style="text-decoration: none; color: black;">Send</a></button>
+          <!-- <button class="send-button"><a href="/python//templates/send-email.html" style="text-decoration: none; color: black;">Send</a></button> -->
+          <button class="save-button">Save</button>
+        </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <aside id="sidebar" class="sidebar editor-sidebar">
+      <h3>Row</h3>
+      <div class="row-options">
+        <div draggable="true" class="row-option"></div>
+        <div draggable="true" class="row-option two-col"><div></div><div></div></div>
+        <div draggable="true" class="row-option three-col"><div></div><div></div><div></div></div>
+        <div draggable="true" class="row-option four-col"><div></div><div></div><div></div><div></div></div>
+      </div>
+      <h3>Content</h3>
+      <div class="content-boxes">
+        <div draggable="true" class="content-item">Head</div>
+        <div draggable="true" class="content-item">Text</div>
+        <div draggable="true" class="content-item">Image</div>
+        <div draggable="true" class="content-item">Button</div>
+        <div draggable="true" class="content-item">Social</div>
+        <div draggable="true" class="content-item">Divider</div>
+      </div>
+    </aside>
+
+    <main class="editor-preview">
+        
+    </main>
+  </div>
+
+  <script src="/data/data.js"></script>
+  <script src="/sidebar/build/create.js"></script>
+  <script src="/sidebar/build/save.js"></script>
+</body>
+</html>

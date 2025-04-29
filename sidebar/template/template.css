@@ -1,0 +1,273 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #template-name {
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .view-toggle button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.4s;
+    border-radius: 20px;
+  }
+  
+  .view-toggle .active ,#previewBtn .active {
+    background: black;
+    color: white;
+    scale: 1.1;
+  }
+  
+  .right-controls button {
+    margin-left: 5px;
+    padding: 5px 15px;
+    /* border: none; */
+    /* cursor: pointer; */
+  }
+
+  .back-button {
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    transition: all 0.4s;
+  }
+
+  .back-button:hover {
+    scale: 1.1;
+    border-radius: 10px;
+    box-shadow: 10px;
+  }
+
+  .send-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: all 0.4s;
+    font-size: 15px;
+  }
+
+  .save-button {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: all 0.4s;
+    font-size: 15px;
+  }
+  
+  .send-button:hover {
+    scale: 1.1;
+    /* background-color: black;
+    color: white; */
+  }
+
+
+  .save-button:hover {
+    scale: 1.1;
+  }
+  
+  .main-container {
+    display: flex;
+    height: calc(100vh - 60px);
+  }
+  
+  .sidebar {
+    width: 250px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    overflow-y: auto;
+  }
+  
+  .content-item {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: all 0.4s;
+    user-select: none;
+    cursor: grab;
+  }
+  
+  .content-item:hover {
+    scale: 1.1;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .content-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .editor-preview {
+    flex-grow: 1;
+    padding: 20px;
+    background: #e5e5e5;
+  }
+  
+  .section {
+    width: 600px;
+    margin: 0 auto 20px auto;
+    border: 1px solid green;
+    padding: 10px;
+    background: white;
+    text-align: center;
+  }
+  
+  .image-box {
+    height: 300px;
+    background: #ccc;
+    border: 1px solid #999;
+  }
+  
+  .go-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .row-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row-option {
+    border: 1px solid #ccc;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    transition: all 0.4s;
+}
+
+.row-option:hover {
+    scale: 1.1;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.row-option div {
+    flex-grow: 1;
+    border-right: 1px solid #ccc;
+    height: 100%;
+}
+
+.row-option div:last-child {
+    border-right: none;
+}
+
+
+
+
+/* -----------------button delete-------------------- */
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 10px auto;
+    border: 2px dashed #ccc;
+    min-height: 100px;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .box {
+    flex: 1;
+    margin: 5px;
+    min-height: 80px;
+    background: #f9f9f9;
+    border: 1px solid #aaa;
+    position: relative;
+  }
+  
+  .content {
+    background: #e0e0e0;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* แสดงปุ่มลบเมื่อคลิก */
+  .box.active .delete-btn,
+  .content.active .delete-btn {
+    display: block;
+  }
+  .main-container {
+    display: flex;
+    height: calc(100vh - 80px); /* ลบความสูงของ header ออก */
+  }
+  
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    background: #f4f4f4;
+    overflow-y: auto;
+  }
+  
+  .editor-preview {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .editor-preview iframe {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
