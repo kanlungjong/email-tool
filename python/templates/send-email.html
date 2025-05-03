@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>ส่งอีเมลด้วย Mailjet</title>
-    <link rel="stylesheet" href="{{ url_for('serve_email_static', filename='send-email.css') }}">
+    <link rel="stylesheet" href="/python/email/send-email.css">
 </head>
 <body>
     <header>
@@ -71,8 +71,9 @@
           reader.readAsText(file);
         });
     </script>
-    
-    <script src="{{ url_for('serve_email_static', filename='send-email.js') }}"></script>
-    <script src="{{ url_for('serve_email_static', filename='data.js') }}"></script>
+
+    <script src="/python/app.js"></script>
+    <script src="/python/email/send-email.js"></script>
+    <script src="/data/data.js"></script>
 </body>
 </html>
