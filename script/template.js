@@ -17,3 +17,13 @@ createButton.addEventListener('click', () => {
 //     <div class="template-name">New Template</div>
 // `;
 // templatesGrid.appendChild(newCard);
+
+var jwt = localStorage.getItem('jwt')
+if (jwt == null) {
+    window.location.href = '/login/textlogin.html'
+}
+
+function logout() {
+    localStorage.removeItem("jwt");
+    window.location.href = '/login/textlogin.html'
+}
