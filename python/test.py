@@ -13,7 +13,7 @@ data = {
       },
       "To": [
         {
-          "Email": "t40736600@gmail.com",
+          "Email": "kanunclejong@gmail.com",
           "Name": "Receiver 1"
         }
       ],
