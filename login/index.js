@@ -1,11 +1,11 @@
 var jwt = localStorage.getItem('jwt')
 if (jwt == null) {
-    window.location.href = '/login/login.html'
+    window.location.href = '/login/'
 }
 
 function logout() {
     localStorage.removeItem("jwt");
-    window.location.href = '/login/login.html'
+    window.location.href = '/login/login-simulate.html'
 }
 
 // เมื่อคลิกที่เมนู sidebar
