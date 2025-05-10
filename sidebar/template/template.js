@@ -1,3 +1,14 @@
+var jwt = localStorage.getItem('jwt')
+if (jwt == null) {
+    window.location.href = '/login/testlogin.html'
+}
+
+function logout() {
+    localStorage.removeItem("jwt");
+    window.location.href = '/login/testlogin.html'
+}
+
+
 previewBtn.addEventListener("click", () => {
     previewBtn.classList.add("active");
     editorBtn.classList.remove("active");

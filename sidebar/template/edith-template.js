@@ -1,3 +1,13 @@
+var jwt = localStorage.getItem('jwt')
+if (jwt == null) {
+    window.location.href = '/login/testlogin.html'
+}
+
+function logout() {
+    localStorage.removeItem("jwt");
+    window.location.href = '/login/testlogin.html'
+}
+
 document.querySelector('iframe').addEventListener('load', () => {
   const iframe = document.querySelector('iframe');
   const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
