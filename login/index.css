@@ -1,0 +1,12 @@
+.top-right a {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    transition: all 0.4s;
+    color: white;
+}
+
+.top-right a:hover {
+    background-color: white;
+    color: black;
+}
