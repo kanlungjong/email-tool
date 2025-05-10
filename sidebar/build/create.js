@@ -1,3 +1,13 @@
+var jwt = localStorage.getItem('jwt')
+if (jwt == null) {
+    window.location.href = '/login/textlogin.html'
+}
+
+function logout() {
+    localStorage.removeItem("jwt");
+    window.location.href = '/login/textlogin.html'
+}
+
 const templateNameInput = document.getElementById("template-name");
 templateNameInput.addEventListener("input", () => {
   document.title = templateNameInput.value || "Template Builder";
