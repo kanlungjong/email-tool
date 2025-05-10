@@ -1,6 +1,6 @@
 const userData = {
     email: "user@gmail.com",
-    profile_picture: "https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    profile_picture: "https://htmlcolorcodes.com/assets/images/colors/silver-color-solid-background-1920x1080.png"
   };
 
 document.getElementById("profile-picture").src = userData.profile_picture;
