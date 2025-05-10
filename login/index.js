@@ -1,11 +1,11 @@
 var jwt = localStorage.getItem('jwt')
 if (jwt == null) {
-    window.location.href = '/Users/kanlungjong/Desktop/web/login/textlogin.html'
+    window.location.href = '/login/textlogin.html'
 }
 
 function logout() {
     localStorage.removeItem("jwt");
-    window.location.href = '/Users/kanlungjong/Desktop/web/login/textlogin.html'
+    window.location.href = '/login/textlogin.html'
 }
 
 // เมื่อคลิกที่เมนู sidebar
