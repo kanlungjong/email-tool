@@ -1,6 +1,6 @@
 var jwt = localStorage.getItem('jwt')
 if (jwt == null) {
-    window.location.href = '/login/'
+    window.location.href = '/login/testlogin.html'
 }
 
 function logout() {
