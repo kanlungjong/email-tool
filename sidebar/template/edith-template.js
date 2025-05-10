@@ -1,11 +1,11 @@
 var jwt = localStorage.getItem('jwt')
 if (jwt == null) {
-    window.location.href = '/login/testlogin.html'
+    window.location.href = '/Users/kanlungjong/Desktop/web/login/textlogin.html'
 }
 
 function logout() {
     localStorage.removeItem("jwt");
-    window.location.href = '/login/testlogin.html'
+    window.location.href = '/Users/kanlungjong/Desktop/web/login/textlogin.html'
 }
 
 document.querySelector('iframe').addEventListener('load', () => {
