@@ -30,7 +30,7 @@ def send_email():
         'Messages': [
             {
                 "From": {
-                    "Email": "kanlungjong@gmail.com",
+                    "Email": "support@itoolmart",
                     "Name": "Kan"
                 },
                 "To": to_list,
